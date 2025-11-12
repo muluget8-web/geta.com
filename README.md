@@ -9,7 +9,7 @@
    <tr>
       <td class="onefield acyfield_1 acyfield_text">
          <label class="cell margin-top-1">
-            <div class="acym__users__creation__fields__title">Name</div>
+            <div class="acym__users__creation__fields__title">button</div>
             <input name="user[name]" value="" data-authorized-content="{&quot;0&quot;:&quot;all&quot;,&quot;regex&quot;:&quot;&quot;,&quot;message&quot;:&quot;Incorrect value for the field Name&quot;}" type="text" class="cell  ">
          </label>
          <div class="acym__field__error__block" data-acym-field-id="1"></div>
