@@ -4,7 +4,7 @@
     <title></title>
   </head>
   <body>
-   <p>Well Come to my Channal you will learn How to use Different technologys in the fututer online Agri, Bussince Idea</p>
+   <p>Well Come to my Channal</p>
     <tbody>
    <tr>
       <td class="onefield acyfield_1 acyfield_text">
