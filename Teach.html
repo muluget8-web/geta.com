@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robot Teacher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #00ffcc;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .code-box {
+            background: #111;
+            border: 2px solid #00ffcc;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🤖 Robot Teacher</h1>
+    <p id="robotText">Press the button to start!</p>
+    <button onclick="teach()">Start Lesson</button>
+
+    <div class="code-box" id="codeBox"></div>
+
+    <script>
+        function teach() {
+            const alphabet = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
+            const utterance = new SpeechSynthesisUtterance(alphabet);
+            utterance.pitch = 0.5; // deeper, robotic tone
+            utterance.rate = 0.8; // slower pace
+            utterance.voice = speechSynthesis.getVoices().find(v => v.name.includes("Google UK English Male")) || null;
+
+            speechSynthesis.speak(utterance);
+            document.getElementById("robotText").textContent = "🤖 Teaching Alphabet...";
+
+            // Show HTML, CSS, JS basics
+            document.getElementById("codeBox").innerHTML = `
+  <strong>HTML:</strong> &lt;h1&gt;Hello World&lt;/h1&gt;<br>
+  <strong>CSS:</strong> h1 { color: blue; }<br>
+  <strong>JS:</strong> alert('Hello World');
+  `;
+        }
+    </script>
+
+</body>
+
+</html>
